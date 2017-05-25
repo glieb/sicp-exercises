@@ -39,10 +39,12 @@
 ;;; limitations of Scheme's representation of numbers. At some limit of
 ;;; size, which is around the order of 14 digits, applying Newton's method
 ;;; no longer changes the value of the guess, but the square of the guess
-;;; will still not be within 0.001 of the square of x. The guess is still
-;;; a fairly close approximation of the square root of x, but the test
-;;; falls apart because the arbitrary value 0.001 does not reflect the
-;;; precision that Scheme allocates to numbers of this size.
+;;; will still not be within 0.001 of of x. 
+
+;;; The guess is still a fairly close approximation of the square root 
+;;; of x, but the test falls apart because the arbitrary value 0.001 
+;;; does not reflect the precision that Scheme allocates to numbers of 
+;;; this size.
 
 ;: Example
 1 ]=> (sqrt 10000000000000)
@@ -53,14 +55,16 @@
 ;;; rather than testing the guess against an arbitrary limit. There will
 ;;; still be an arbitrary limit applied, but only to the change in the
 ;;; guess relative to its previous iteration, rather than the distance
-;;; of the square of the guess from the square of the number being rooted.
+;;; of the square of the guess from the number being rooted.
 
-;;; Measuring change instead of what we may call "distance from
+;;; Measuring degree of change instead of what we may call "distance from
 ;;; correctness" only works because of the reliability of Newton's method
 ;;; for providing a closer approximation of a square root at each
 ;;; iteration. If Newton's method were to fail to do so for any reason,
-;;; this approach could be seen as inferior to the goalpost-oriented
+;;; this approach could be seen as inferior to a goalpost-oriented
 ;;; approach.
+
+
 
 ;: tests degree of change rather than distance from a target
 (define (good-enough? guess last-guess)
