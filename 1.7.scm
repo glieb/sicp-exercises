@@ -20,7 +20,7 @@
 ;;; This sqrt procedure is accurate for general cases, but runs into two
 ;;; separate problems when applied to the two extremes of size. Both
 ;;; problems are rooted in the use of the constant limit of 0.001 to judge
-;;; all discrepancies of size. 
+;;; all discrepancies of accuracy. 
 
 ;;; The first problem, which relates to taking the square root of very
 ;;; small numbers, is easy to explain. When dealing with numbers in the
@@ -46,9 +46,10 @@
 ;;; does not reflect the precision that Scheme allocates to numbers of 
 ;;; this size.
 
-;: Example
+;: Example:
+
 1 ]=> (sqrt 10000000000000)
-;: this procedure never terminates
+;: this expression never terminates
 
 ;;; A properly functioning sqrt procedure based on Newton's method must
 ;;; take into account the degree of change between the guesses over time,
@@ -93,4 +94,3 @@
 1 ]=> (sqrt 10000000000000)
 
 ;Value: 3162277.6640104805
-
