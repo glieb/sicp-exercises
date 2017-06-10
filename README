@@ -11,6 +11,10 @@ some degree of verification against the existing record of solutions.
 Therefore, none of what is written here should be considered entirely
 my own creation. 
 
+Credit goes to the Community Scheme Wiki for being the primary source
+against which I checked my work and from which I borrowed solutions
+that I could not think up on my own.
+
 The solution files are all given a .scm extension for the purpose of
 syntax highlighting. A large portion of them will cause errors if
 you attempt to run them through an interpreter. The files with "test"
