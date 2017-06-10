@@ -1,0 +1,18 @@
+This is a collection of exercise solutions from the second edition
+of Hal Abelson and Gerald Sussman's Structure and Interpretation of
+Computer Programs.
+
+In an attempt to produce as accurate and complete an answer to each
+exercise in the book, each answer was researched online as well as
+tested in the MIT Scheme interpreter whenever the need became
+apparent. While I did spend ample time inventing my own creative
+solutions to many of these problems, all of them involved at least
+some degree of verification against the existing record of solutions.
+Therefore, none of what is written here should be considered entirely
+my own creation. 
+
+The solution files are all given a .scm extension for the purpose of
+syntax highlighting. A large portion of them will cause errors if
+you attempt to run them through an interpreter. The files with "test"
+in the name can all be loaded into MIT Scheme without errors, as well
+as a few without. 
