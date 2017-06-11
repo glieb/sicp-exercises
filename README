@@ -2,18 +2,26 @@ This is a collection of exercise solutions from the second edition
 of Hal Abelson and Gerald Sussman's Structure and Interpretation of
 Computer Programs.
 
-In an attempt to produce as accurate and complete an answer to each
-exercise in the book, each answer was researched online as well as
-tested in the MIT Scheme interpreter whenever the need became
-apparent. While I did spend ample time inventing my own creative
-solutions to many of these problems, all of them involved at least
-some degree of verification against the existing record of solutions.
-Therefore, none of what is written here should be considered entirely
-my own creation. 
+The goal of this repository is to enhance my own understanding of the
+SICP book. I am choosing to share it for the benefit of anyone else
+reading the book or otherwise curious. My own philosophy when
+completing these exercises was to provide the best possible answer
+to each question I attempted, even if the methods used would have
+been considered "cheating" in an academic setting.
 
 Credit goes to the Community Scheme Wiki for being the primary source
-against which I checked my work and from which I borrowed solutions
-that I could not think up on my own.
+against which I checked my work and from which I copied code snippets
+when they were inarguably superior to my own. Due to extensive reliance
+on the Community Scheme Wiki for completing and perfecting these
+solutions, the entire repo can be considered a derivative work of that
+wiki, which you can find at http://community.schemewiki.org/.
+
+Any code written here can be assumed to at minimum have been compared
+to similar code snippets written elsewhere, and at maximum have been 
+copied entirely. Any comments written here describing the code or
+otherwise using plain English can be assumed to have been written
+entirely by me. However, to avoid unnecessary complications, the whole 
+work is covered under one license.
 
 The solution files are all given a .scm extension for the purpose of
 syntax highlighting. A large portion of them will cause errors if
