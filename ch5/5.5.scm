@@ -37,7 +37,7 @@
 '((label afterfib-n-1) 3 (label afterfib-n-1) 4 (label fib-done)) 
   ; val restored to 1
 '(3 (label afterfib-n-1) 4 (label fib-done))
-'((label afterfib-n-1) 4 (label fib-done))
+'((label afterfib-n-1) 4 (label fib-done)) ; n restored
 '(4 (label fib-done))
 '((label afterfib-n-1) 4 (label fib-done))
 '(1 (label afterfib-n-1) 4 (label fib-done))
